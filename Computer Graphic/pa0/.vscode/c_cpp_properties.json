@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "D:/TOOLS/MinGW/include",
+                    "D:/TOOLS/MinGW/lib/gcc/mingw32/9.2.0/include",
+                    "D:/TOOLS/C++Depend/eigen-git-mirror-master/Eigen"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/TOOLS/MinGW/include/**",
+                "D:/TOOLS/MinGW/lib/gcc/mingw32/9.2.0/include/**",
+                "D:/TOOLS/C++Depend/eigen-git-mirror-master/Eigen/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:/TOOLS/MinGW/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

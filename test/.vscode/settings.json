@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.template": "c",
+        "main.h": "c",
+        "stm32f1xx_hal_conf.h": "c",
+        "vector": "cpp",
+        "random": "cpp",
+        "ostream": "cpp",
+        "array": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "variant": "cpp"
+    }
+}

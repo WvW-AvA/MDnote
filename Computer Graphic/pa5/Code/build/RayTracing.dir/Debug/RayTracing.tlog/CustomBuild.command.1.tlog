@@ -1,0 +1,10 @@
+^D:\C++\COMPUTER GRAPHIC\PA5\CODE\CMAKELISTS.TXT
+setlocal
+C:\MyDate\cmake-3.20.0-windows-x86_64\bin\cmake.exe "-SD:/C++/Computer Graphic/pa5/Code" "-BD:/C++/Computer Graphic/pa5/Code/build" --check-stamp-file "D:/C++/Computer Graphic/pa5/Code/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

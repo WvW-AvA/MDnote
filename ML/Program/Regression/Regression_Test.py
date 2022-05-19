@@ -70,7 +70,7 @@ for k in range(20):
     out[:, k] = w[:, 0]
 
 excel_date = pd.DataFrame(out)
-writer = pd.ExcelWriter("D:\Program\PyTest\output.xlsx")
+writer = pd.ExcelWriter("output.xlsx")
 excel_date.to_excel(writer, 'output1', float_format='%f', index=False)
 writer.save()
 writer.close()

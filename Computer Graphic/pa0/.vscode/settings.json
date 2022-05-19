@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.template": "cpp",
+        "main.h": "c",
+        "stm32f1xx_hal_conf.h": "c",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "fstream": "cpp",
+        "ostream": "cpp"
+    }
+}
