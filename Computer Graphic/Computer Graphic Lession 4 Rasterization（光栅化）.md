@@ -22,17 +22,17 @@
 
 顾名思义，限制盒就是用一个矩形区域将三角形包起来，只需遍历矩形区域内的像素就好。
 
-<img src="D:\C++\Computer Graphic\picture\2021-08-23_114146.png" alt="img" style="zoom:38%;" />
+<img src="picture\2021-08-23_114146.png" alt="img" style="zoom:38%;" />
 
 另外，我们也可以直接确立三角形的边界，直接渲染。
 
-<img src="D:\C++\Computer Graphic\picture\2021-08-23_114203.png" alt="img" style="zoom:38%;" />
+<img src="picture\2021-08-23_114203.png" alt="img" style="zoom:38%;" />
 
 
 
 但是这样有一些比较明显的问题，就是锯齿。
 
-<img src="D:\C++\Computer Graphic\picture\2021-08-21_114417.png" alt="img" style="zoom:38%;" />
+<img src="picture\2021-08-21_114417.png" alt="img" style="zoom:38%;" />
 
 实际上渲染的本质就是一个在2D平面上采样的过程，锯齿产生的原因是走样，因此要解决锯齿的问题，我们要了解一下采样原理。
 
@@ -48,7 +48,7 @@
 
 砍掉高频信号后，原信号就会变得平缓，2D图像表现为边界被模糊化。
 
-<img src="D:\C++\Computer Graphic\picture\2021-08-21_123046.png" alt="ing" style="zoom:38%;" />
+<img src="picture\2021-08-21_123046.png" alt="ing" style="zoom:38%;" />
 
 提高采样率就是增加像素点的个数，对应超分辨率技术。
 
@@ -56,7 +56,7 @@
 
 这两种思路的具体实现是什么样的呢，模糊边界的基本原理是对时域卷积操作，再2d图像上的表现为一个方形的采样滑块，划过每一个像素，计算平均值。
 
-<img src="D:\C++\Computer Graphic\picture\2021-08-23_121101.png" alt="img" style="zoom:38%;" />
+<img src="picture\2021-08-23_121101.png" alt="img" style="zoom:38%;" />
 
 但是在图形学中我们不能先采样生成2d图像之后再用2d图像的卷积操作，应该在采样之前就进行卷积。
 
@@ -64,5 +64,5 @@
 
 顾名思义就是更多的采样点，将一个像素分割成多个像素。
 
-<img src="D:\C++\Computer Graphic\picture\2021-08-23_143639.png" alt="img" style="zoom:38%;" /><img src="D:\C++\Computer Graphic\picture\2021-08-23_143734.png" alt="img" style="zoom:40%;" />
+<img src="picture\2021-08-23_143639.png" alt="img" style="zoom:38%;" /><img src="picture\2021-08-23_143734.png" alt="img" style="zoom:40%;" />
 
