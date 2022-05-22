@@ -19,10 +19,10 @@ Camputer find the function whose loss is less.
 
 #### Reinforcement Learning 
 Alpha Go is supervised learning + reinforcement learning.
-![img](https://github.com/kimojiaa/MDnote/raw/master/Picture/2021-07-13_120005.png)
+![img](Picture/2021-07-13_120005.png)
 
 #### Learning Path
-![img](https://github.com/kimojiaa/MDnote/raw/master/Picture/2021-07-13_120646.png)
+![img](Picture/2021-07-13_120646.png)
 
 #### Mata Learning
 
